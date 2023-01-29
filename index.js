@@ -34,3 +34,15 @@ fetch("https://random.dog/woof.json")
   .then((dog) => {
     document.getElementsByClassName("thumbnail")[3].src = dog.url;
   })
+
+
+
+
+fetch("https://stoicquotesapi.com/v1/api/quotes/random")
+.then((response) => response.json())
+.then((stoic) => {
+  console.log(stoic)
+  document.getElementById('stoic').innerHTML = stoic.body
+  document.getElementById('writer').innerHTML = stoic.author
+
+})
