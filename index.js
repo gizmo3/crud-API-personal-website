@@ -28,4 +28,9 @@ fetch("https://api.chess.com/pub/puzzle")
 
 
 });
-  
+
+fetch("https://random.dog/woof.json") 
+  .then((response) => response.json())
+  .then((dog) => {
+    document.getElementsByClassName("thumbnail")[3].src = dog.url;
+  })
