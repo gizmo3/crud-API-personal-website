@@ -42,3 +42,11 @@ h1 {
   margin-bottom: 12px;
   margin-top: 2px;
 }
+
+#dogImg{
+  height: 350px;
+}
+
+#msg {
+  color: red;
+}
